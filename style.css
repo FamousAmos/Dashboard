@@ -1,3 +1,7 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
@@ -12,10 +16,36 @@
 }
 
 .nav {
+  display: grid;
   background-color: blue;
   grid-column: 1;
   grid-row: 1 / 3;
+  color: white;
+  gap: 35px;
+  grid-template-rows: auto auto 1fr;
+  padding: 20px;
 
+}
+
+.nav-heading {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-heading h2 {
+  margin: 0;
+}
+
+.nav ul {
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li {
+  padding: 7px;
 }
 
 .projects {
