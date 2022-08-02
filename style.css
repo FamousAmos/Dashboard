@@ -181,11 +181,39 @@ body {
   grid-column: 2;
   grid-row: 2;
   grid-template-columns: 3fr 1fr;
+  padding: 20px;
+}
+
+.projects,
+.sidebar {
+  padding: 10px;
+}
+
+.projects h2 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
 }
 
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.card,
+.announcements-container,
+.people {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #bdc3ba;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+  border-left: 10px solid var(--splash-color);
+  height: 160px;
+  padding: 20px;
 }
 
 .sidebar {
