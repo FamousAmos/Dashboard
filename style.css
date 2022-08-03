@@ -9,6 +9,11 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -189,7 +194,9 @@ body {
   padding: 10px;
 }
 
-.projects h2 {
+.projects h2,
+.announcements h2,
+.trending h2 {
   font-size: 1.2rem;
   margin-bottom: 12px;
 }
@@ -216,8 +223,70 @@ body {
   padding: 20px;
 }
 
+.card-text h4 {
+  margin: 0;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card-buttons img {
+  padding: 10px;
+}
+
+.card-buttons img:hover {
+  cursor: pointer;
+  scale: 1.2;
+}
+
 .sidebar {
   background-color: var(--gray-background-color);
+}
+
+.announcements-container {
+  padding: 20px 30px;
+  margin-bottom: 40px;
+}
+
+.announcement {
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 20px;
+}
+
+.announcement p {
+  margin-top: 5px;
+  font-weight: lighter;
+}
+
+.announcement:last-of-type {
+  border-bottom: none;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.people {
+  padding: 20px;
+}
+
+.person {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 5fr;
+  padding: 5px;
+  align-items: center;
+}
+
+.info {
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+.info p {
+  margin-top: 2px;
+  color: gray;
+  font-size: 0.7rem;
 }
